@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Biotech AI Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Biotech AI Projects">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #3651d6;
+      --bg: #f5f7fa;
+      --white: #fff;
+      --card-bg: #fff;
+      --shadow: rgba(50,70,110,.07) 0 6px 28px 0;
+      --border: #e0e4ee;
+      --radius: 16px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background: var(--bg);
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      color: #262626;
+    }
+    header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 2rem 1rem 1.5rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 2.5rem auto 1.5rem auto;
+      padding: 0 2vw;
+    }
+    .project-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: transform .2s, box-shadow .2s;
+      border: 1.5px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .project-image {
+      background: linear-gradient(120deg, #eaf2fa 0%, #d3e2ff 100%);
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.4rem;
+      color: #b0b7c8;
+    }
+    .project-title {
+      padding: 1.1rem 1rem 0.2rem 1rem;
+      font-weight: 700;
+      font-size: 1.13rem;
+      color: #2d378a;
+      letter-spacing: 0.5px;
+      flex-grow: 0;
+    }
+    .project-desc {
+      padding: 0 1rem 1rem 1rem;
+      font-size: 0.99rem;
+      min-height: 56px;
+      flex-grow: 1;
+      color: #555;
+    }
+    .project-card:hover {
+      transform: translateY(-6px) scale(1.015);
+      box-shadow: 0 10px 38px 4px rgba(54,81,214,0.09);
+    }
+    section.contact {
+      margin: 2.5rem auto 0 auto;
+      padding: 1.8rem 2rem;
+      background: var(--white);
+      border-radius: var(--radius);
+      max-width: 420px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      border: 1.5px solid var(--border);
+    }
+    .contact-title {
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-bottom: 0.7rem;
+      color: var(--primary);
+      letter-spacing: 1px;
+    }
+    .contact-email {
+      color: var(--primary);
+      font-size: 1.08rem;
+      font-weight: 500;
+      text-decoration: none;
+      word-break: break-all;
+      border-bottom: 1px dotted #b4c4fa;
+      padding-bottom: 2px;
+    }
+    .footer {
+      margin: 3.5rem 0 1.2rem 0;
+      color: #8c94ab;
+      text-align: center;
+      font-size: 0.98rem;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .portfolio-grid {
+        gap: 1rem;
+      }
+      section.contact {
+        padding: 1.1rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>[Your Name]</h1>
+  </header>
+
+  <main>
+    <div class="portfolio-grid">
+      <div class="project-card">
+        <div class="project-image">
+          <span>🧬</span>
+        </div>
+        <div class="project-title">Project Title A</div>
+        <div class="project-desc">
+          Lorem ipsum dolor sit amet, consectetur.<br>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <span>🔬</span>
+        </div>
+        <div class="project-title">Project Title B</div>
+        <div class="project-desc">
+          Short description of project goes here.
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <span>💡</span>
+        </div>
+        <div class="project-title">Project Title C</div>
+        <div class="project-desc">
+          Placeholder for a third project description.
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <span>🧪</span>
+        </div>
+        <div class="project-title">Project Title D</div>
+        <div class="project-desc">
+          Brief info for project D.
+        </div>
+      </div>
+      <!-- Add more project-card divs as needed -->
+    </div>
+
+    <section class="contact">
+      <div class="contact-title">Contact</div>
+      <div>
+        <a href="mailto:[your.email@domain.com]?subject=Inquiry" class="contact-email">[your.email@domain.com]</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">
+    &copy; 2024 [Your Name] &mdash; Portfolio
+  </div>
+</body>
+</html>
