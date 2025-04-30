@@ -133,36 +133,7 @@ nav {
     border-radius: 8px;
 }
 
-/* Contact Section */
-#contact {
-    padding: 5rem 2rem;
-    background-color: var(--light-bg);
-}
 
-.contact-container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-#contact-form input,
-#contact-form select,
-#contact-form textarea {
-    padding: 1rem;
-    border: 1px solid #e5e7eb;
-    border-radius: 4px;
-    font-family: inherit;
-}
-
-#contact-form textarea {
-    height: 150px;
-    resize: vertical;
-}
 
 /* Common Styles */
 h2 {
@@ -189,11 +160,50 @@ h2 {
     background-color: var(--secondary-color);
 }
 
+/* Contact Section */
+#contact {
+    padding: 5rem 2rem;
+    background-color: var(--light-bg);
+    margin-bottom: 3rem;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-container p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.linkedin-link:hover {
+    background-color: var(--secondary-color);
+}
+
+.linkedin-link i {
+    font-size: 1.2rem;
+}
+
 /* Footer */
 footer {
     background-color: var(--text-color);
     color: var(--white);
-    padding: 3rem 2rem 1rem;
+    /* padding: 3rem 2rem 1rem; */
 }
 
 .footer-content {
@@ -207,8 +217,35 @@ footer {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-section a {
+    color: var(--white);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-section a:hover {
+    opacity: 0.8;
+}
+
+/* Demo Link */
+.demo-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.demo-link:hover {
+    background-color: var(--secondary-color);
 }
 
 /* Responsive Design */
@@ -219,5 +256,9 @@ footer {
     
     .nav-links {
         display: none;
+    }
+    .back-button {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
 }
