@@ -234,6 +234,14 @@ footer {
     opacity: 0.8;
 }
 
+/* Demo Preview */
+.demo-preview {
+    width: 100%;
+    border-radius: 4px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 /* Demo Link */
 .demo-link {
     display: inline-block;
