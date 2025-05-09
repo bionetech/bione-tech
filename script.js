@@ -9,16 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form submission handling
-    const form = document.getElementById('contact-form');
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        // Here you would typically handle the form submission
-        // For now, we'll just show an alert
-        alert('Thank you for your interest! We will contact you soon.');
-        form.reset();
-    });
-
     // Add scroll animation for service cards
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -36,5 +26,3 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
 });
-
-// biohightech.pro
