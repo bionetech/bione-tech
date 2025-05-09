@@ -106,6 +106,9 @@ nav {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
 }
 
 .service-card:hover {
@@ -247,13 +250,15 @@ footer {
 /* Demo Link */
 .demo-link {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: auto;
     padding: 5px 15px;
     background-color: var(--primary-color);
     color: var(--white);
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    max-width: 120px;
+    text-align: center;
 }
 
 .demo-link:hover {
